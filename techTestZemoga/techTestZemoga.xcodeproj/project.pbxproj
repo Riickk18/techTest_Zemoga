@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F1BE5F75522BE2F1231394E /* Pods_techTestZemoga_techTestZemogaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09582ACBCD9BEA0B883B05E9 /* Pods_techTestZemoga_techTestZemogaUITests.framework */; };
+		324C5131CEDAF8AE1703D01E /* Pods_techTestZemogaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948D776B9B4568C40B35F5B /* Pods_techTestZemogaTests.framework */; };
+		AB409547286CF11100973073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409546286CF11100973073 /* AppDelegate.swift */; };
+		AB409549286CF11100973073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409548286CF11100973073 /* SceneDelegate.swift */; };
+		AB40954B286CF11100973073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40954A286CF11100973073 /* ViewController.swift */; };
+		AB40954E286CF11100973073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB40954C286CF11100973073 /* Main.storyboard */; };
+		AB409550286CF11200973073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB40954F286CF11200973073 /* Assets.xcassets */; };
+		AB409553286CF11200973073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB409551286CF11200973073 /* LaunchScreen.storyboard */; };
+		AB40955E286CF11200973073 /* techTestZemogaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40955D286CF11200973073 /* techTestZemogaTests.swift */; };
+		AB409568286CF11200973073 /* techTestZemogaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409567286CF11200973073 /* techTestZemogaUITests.swift */; };
+		AB40956A286CF11200973073 /* techTestZemogaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409569286CF11200973073 /* techTestZemogaUITestsLaunchTests.swift */; };
+		AB409578286CF29900973073 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409577286CF29900973073 /* ServiceProtocol.swift */; };
+		AB40957A286CF2BB00973073 /* URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409579286CF2BB00973073 /* URLComponents.swift */; };
+		AB40957C286CF39500973073 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40957B286CF39500973073 /* URLRequest+Extensions.swift */; };
+		AB40957E286CF3E500973073 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40957D286CF3E500973073 /* NetworkResponse.swift */; };
+		AB409580286CF3FB00973073 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40957F286CF3FB00973073 /* NetworkError.swift */; };
+		AB409582286CF44A00973073 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409581286CF44A00973073 /* URLSessionProvider.swift */; };
+		AB409583286CF45200973073 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409577286CF29900973073 /* ServiceProtocol.swift */; };
+		AB409584286CF45200973073 /* URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409579286CF2BB00973073 /* URLComponents.swift */; };
+		AB409585286CF45200973073 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40957B286CF39500973073 /* URLRequest+Extensions.swift */; };
+		AB409586286CF45200973073 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40957D286CF3E500973073 /* NetworkResponse.swift */; };
+		AB409587286CF45200973073 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40957F286CF3FB00973073 /* NetworkError.swift */; };
+		AB409588286CF45200973073 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409581286CF44A00973073 /* URLSessionProvider.swift */; };
+		AB40958A286CF47B00973073 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409589286CF47B00973073 /* URLSessionProtocol.swift */; };
+		AB40958B286CF47B00973073 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409589286CF47B00973073 /* URLSessionProtocol.swift */; };
+		AB409592286CF72C00973073 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409591286CF72C00973073 /* Post.swift */; };
+		AB409594286CF96700973073 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409593286CF96700973073 /* Comment.swift */; };
+		AB409596286CFA6800973073 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409595286CFA6800973073 /* User.swift */; };
+		AB409599286CFE0D00973073 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB409598286CFE0D00973073 /* PostsListViewController.swift */; };
+		AB40959C286CFEF200973073 /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40959B286CFEF200973073 /* PostsListViewModel.swift */; };
+		AB40959E286CFF3100973073 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB40959D286CFF3100973073 /* BaseViewModelProtocol.swift */; };
+		AB4095A2286D009B00973073 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4095A0286D009B00973073 /* PostViewCell.swift */; };
+		AB4095A3286D009B00973073 /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4095A1286D009B00973073 /* PostViewCell.xib */; };
+		AB4095A6286D023F00973073 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4095A5286D023F00973073 /* PostViewModel.swift */; };
+		AB4095A8286DD93500973073 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4095A7286DD93500973073 /* PostService.swift */; };
+		AB624454286E320A006AD43B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB624453286E320A006AD43B /* UserService.swift */; };
+		AB624459286E3A8A006AD43B /* CommentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB624457286E3A8A006AD43B /* CommentViewCell.swift */; };
+		AB62445A286E3A8A006AD43B /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB624458286E3A8A006AD43B /* CommentViewCell.xib */; };
+		AB62445C286E3D6A006AD43B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62445B286E3D6A006AD43B /* String+Extensions.swift */; };
+		AB624461286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB624460286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift */; };
+		ABA724CD286E0857003BBFCC /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA724CC286E0857003BBFCC /* PostDetailViewController.swift */; };
+		ABA724D1286E1058003BBFCC /* TitleAndDescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA724CF286E1058003BBFCC /* TitleAndDescriptionViewCell.swift */; };
+		ABA724D2286E1058003BBFCC /* TitleAndDescriptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA724D0286E1058003BBFCC /* TitleAndDescriptionViewCell.xib */; };
+		ABA724D6286E12DA003BBFCC /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA724D5286E12DA003BBFCC /* PostDetailViewModel.swift */; };
+		ABA724D8286E13D4003BBFCC /* TitleAndBodyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA724D7286E13D4003BBFCC /* TitleAndBodyViewModel.swift */; };
+		ABA724DA286E144B003BBFCC /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA724D9286E144B003BBFCC /* CommentViewModel.swift */; };
+		ABC08714286DDF5200FC3140 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC08713286DDF5200FC3140 /* UIViewController+Extensions.swift */; };
+		ABC08716286DDFC400FC3140 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC08715286DDFC400FC3140 /* UIApplication+Extensions.swift */; };
+		ACF9955FE6FA40F92CF3A3A1 /* Pods_techTestZemoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2191D5E85B4B4AF84FB4D435 /* Pods_techTestZemoga.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB40955A286CF11200973073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB40953B286CF11100973073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB409542286CF11100973073;
+			remoteInfo = techTestZemoga;
+		};
+		AB409564286CF11200973073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB40953B286CF11100973073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB409542286CF11100973073;
+			remoteInfo = techTestZemoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09582ACBCD9BEA0B883B05E9 /* Pods_techTestZemoga_techTestZemogaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_techTestZemoga_techTestZemogaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2191D5E85B4B4AF84FB4D435 /* Pods_techTestZemoga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_techTestZemoga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		379F63E34699084D07CA562F /* Pods-techTestZemogaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techTestZemogaTests.debug.xcconfig"; path = "Target Support Files/Pods-techTestZemogaTests/Pods-techTestZemogaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D138483F2A3A5402C8C5D41 /* Pods-techTestZemoga-techTestZemogaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techTestZemoga-techTestZemogaUITests.release.xcconfig"; path = "Target Support Files/Pods-techTestZemoga-techTestZemogaUITests/Pods-techTestZemoga-techTestZemogaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4948D776B9B4568C40B35F5B /* Pods_techTestZemogaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_techTestZemogaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDFB14118F1FCAE14ACD5DB /* Pods-techTestZemoga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techTestZemoga.debug.xcconfig"; path = "Target Support Files/Pods-techTestZemoga/Pods-techTestZemoga.debug.xcconfig"; sourceTree = "<group>"; };
+		AB409543286CF11100973073 /* techTestZemoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = techTestZemoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB409546286CF11100973073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB409548286CF11100973073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB40954A286CF11100973073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB40954D286CF11100973073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB40954F286CF11200973073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB409552286CF11200973073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB409554286CF11200973073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB409559286CF11200973073 /* techTestZemogaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = techTestZemogaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB40955D286CF11200973073 /* techTestZemogaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techTestZemogaTests.swift; sourceTree = "<group>"; };
+		AB409563286CF11200973073 /* techTestZemogaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = techTestZemogaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB409567286CF11200973073 /* techTestZemogaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techTestZemogaUITests.swift; sourceTree = "<group>"; };
+		AB409569286CF11200973073 /* techTestZemogaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techTestZemogaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB409577286CF29900973073 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		AB409579286CF2BB00973073 /* URLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponents.swift; sourceTree = "<group>"; };
+		AB40957B286CF39500973073 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		AB40957D286CF3E500973073 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		AB40957F286CF3FB00973073 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AB409581286CF44A00973073 /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		AB409589286CF47B00973073 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		AB409591286CF72C00973073 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AB409593286CF96700973073 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		AB409595286CFA6800973073 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AB409598286CFE0D00973073 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		AB40959B286CFEF200973073 /* PostsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
+		AB40959D286CFF3100973073 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
+		AB4095A0286D009B00973073 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
+		AB4095A1286D009B00973073 /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewCell.xib; sourceTree = "<group>"; };
+		AB4095A5286D023F00973073 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		AB4095A7286DD93500973073 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		AB624453286E320A006AD43B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		AB624457286E3A8A006AD43B /* CommentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewCell.swift; sourceTree = "<group>"; };
+		AB624458286E3A8A006AD43B /* CommentViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
+		AB62445B286E3D6A006AD43B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		AB624460286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDeleteAllPostsViewController.swift; sourceTree = "<group>"; };
+		ABA724CC286E0857003BBFCC /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		ABA724CF286E1058003BBFCC /* TitleAndDescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndDescriptionViewCell.swift; sourceTree = "<group>"; };
+		ABA724D0286E1058003BBFCC /* TitleAndDescriptionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndDescriptionViewCell.xib; sourceTree = "<group>"; };
+		ABA724D5286E12DA003BBFCC /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		ABA724D7286E13D4003BBFCC /* TitleAndBodyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndBodyViewModel.swift; sourceTree = "<group>"; };
+		ABA724D9286E144B003BBFCC /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		ABC08713286DDF5200FC3140 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		ABC08715286DDFC400FC3140 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		B3181F8F33AB0559D9940050 /* Pods-techTestZemogaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techTestZemogaTests.release.xcconfig"; path = "Target Support Files/Pods-techTestZemogaTests/Pods-techTestZemogaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0472A25C8C34D65DA4D33AB /* Pods-techTestZemoga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techTestZemoga.release.xcconfig"; path = "Target Support Files/Pods-techTestZemoga/Pods-techTestZemoga.release.xcconfig"; sourceTree = "<group>"; };
+		FFCB12B7755F8F0BE7154260 /* Pods-techTestZemoga-techTestZemogaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techTestZemoga-techTestZemogaUITests.debug.xcconfig"; path = "Target Support Files/Pods-techTestZemoga-techTestZemogaUITests/Pods-techTestZemoga-techTestZemogaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB409540286CF11100973073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF9955FE6FA40F92CF3A3A1 /* Pods_techTestZemoga.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB409556286CF11200973073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324C5131CEDAF8AE1703D01E /* Pods_techTestZemogaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB409560286CF11200973073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1BE5F75522BE2F1231394E /* Pods_techTestZemoga_techTestZemogaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E178BD43F1E3DE296B760A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2191D5E85B4B4AF84FB4D435 /* Pods_techTestZemoga.framework */,
+				09582ACBCD9BEA0B883B05E9 /* Pods_techTestZemoga_techTestZemogaUITests.framework */,
+				4948D776B9B4568C40B35F5B /* Pods_techTestZemogaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BE64C66FC3FDBEACEFD6F96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EDFB14118F1FCAE14ACD5DB /* Pods-techTestZemoga.debug.xcconfig */,
+				F0472A25C8C34D65DA4D33AB /* Pods-techTestZemoga.release.xcconfig */,
+				FFCB12B7755F8F0BE7154260 /* Pods-techTestZemoga-techTestZemogaUITests.debug.xcconfig */,
+				3D138483F2A3A5402C8C5D41 /* Pods-techTestZemoga-techTestZemogaUITests.release.xcconfig */,
+				379F63E34699084D07CA562F /* Pods-techTestZemogaTests.debug.xcconfig */,
+				B3181F8F33AB0559D9940050 /* Pods-techTestZemogaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB40953A286CF11100973073 = {
+			isa = PBXGroup;
+			children = (
+				AB409545286CF11100973073 /* techTestZemoga */,
+				AB40955C286CF11200973073 /* techTestZemogaTests */,
+				AB409566286CF11200973073 /* techTestZemogaUITests */,
+				AB409544286CF11100973073 /* Products */,
+				8BE64C66FC3FDBEACEFD6F96 /* Pods */,
+				63E178BD43F1E3DE296B760A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB409544286CF11100973073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB409543286CF11100973073 /* techTestZemoga.app */,
+				AB409559286CF11200973073 /* techTestZemogaTests.xctest */,
+				AB409563286CF11200973073 /* techTestZemogaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB409545286CF11100973073 /* techTestZemoga */ = {
+			isa = PBXGroup;
+			children = (
+				ABC08711286DDF1A00FC3140 /* Common */,
+				AB409576286CF26C00973073 /* Networking */,
+				AB40958E286CF59200973073 /* Model */,
+				AB409590286CF5AA00973073 /* View */,
+				AB40958F286CF5A000973073 /* ViewModel */,
+				AB409546286CF11100973073 /* AppDelegate.swift */,
+				AB409548286CF11100973073 /* SceneDelegate.swift */,
+				AB40954A286CF11100973073 /* ViewController.swift */,
+				AB40954C286CF11100973073 /* Main.storyboard */,
+				AB40954F286CF11200973073 /* Assets.xcassets */,
+				AB409551286CF11200973073 /* LaunchScreen.storyboard */,
+				AB409554286CF11200973073 /* Info.plist */,
+			);
+			path = techTestZemoga;
+			sourceTree = "<group>";
+		};
+		AB40955C286CF11200973073 /* techTestZemogaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB40955D286CF11200973073 /* techTestZemogaTests.swift */,
+			);
+			path = techTestZemogaTests;
+			sourceTree = "<group>";
+		};
+		AB409566286CF11200973073 /* techTestZemogaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB409567286CF11200973073 /* techTestZemogaUITests.swift */,
+				AB409569286CF11200973073 /* techTestZemogaUITestsLaunchTests.swift */,
+			);
+			path = techTestZemogaUITests;
+			sourceTree = "<group>";
+		};
+		AB409576286CF26C00973073 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AB40958D286CF57800973073 /* Services */,
+				AB40958C286CF56100973073 /* Configuration */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AB40958C286CF56100973073 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AB409577286CF29900973073 /* ServiceProtocol.swift */,
+				AB409579286CF2BB00973073 /* URLComponents.swift */,
+				AB40957B286CF39500973073 /* URLRequest+Extensions.swift */,
+				AB40957D286CF3E500973073 /* NetworkResponse.swift */,
+				AB40957F286CF3FB00973073 /* NetworkError.swift */,
+				AB409581286CF44A00973073 /* URLSessionProvider.swift */,
+				AB409589286CF47B00973073 /* URLSessionProtocol.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		AB40958D286CF57800973073 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB4095A7286DD93500973073 /* PostService.swift */,
+				AB624453286E320A006AD43B /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AB40958E286CF59200973073 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB409591286CF72C00973073 /* Post.swift */,
+				AB409593286CF96700973073 /* Comment.swift */,
+				AB409595286CFA6800973073 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB40958F286CF5A000973073 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABA724D3286E12C6003BBFCC /* PostDetail */,
+				AB40959A286CFED800973073 /* PostsList */,
+				AB40959D286CFF3100973073 /* BaseViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB409590286CF5AA00973073 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB62445F286E57C8006AD43B /* CustomAlerts */,
+				ABA724CB286E083D003BBFCC /* PostDetail */,
+				AB409597286CFDF400973073 /* PostsList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB409597286CFDF400973073 /* PostsList */ = {
+			isa = PBXGroup;
+			children = (
+				AB40959F286D007300973073 /* Cells */,
+				AB409598286CFE0D00973073 /* PostsListViewController.swift */,
+			);
+			path = PostsList;
+			sourceTree = "<group>";
+		};
+		AB40959A286CFED800973073 /* PostsList */ = {
+			isa = PBXGroup;
+			children = (
+				AB4095A4286D023400973073 /* Cells */,
+				AB40959B286CFEF200973073 /* PostsListViewModel.swift */,
+			);
+			path = PostsList;
+			sourceTree = "<group>";
+		};
+		AB40959F286D007300973073 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB4095A0286D009B00973073 /* PostViewCell.swift */,
+				AB4095A1286D009B00973073 /* PostViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB4095A4286D023400973073 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB4095A5286D023F00973073 /* PostViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB62445F286E57C8006AD43B /* CustomAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				AB624460286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift */,
+			);
+			path = CustomAlerts;
+			sourceTree = "<group>";
+		};
+		ABA724CB286E083D003BBFCC /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ABA724CE286E102F003BBFCC /* Cells */,
+				ABA724CC286E0857003BBFCC /* PostDetailViewController.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		ABA724CE286E102F003BBFCC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ABA724CF286E1058003BBFCC /* TitleAndDescriptionViewCell.swift */,
+				ABA724D0286E1058003BBFCC /* TitleAndDescriptionViewCell.xib */,
+				AB624457286E3A8A006AD43B /* CommentViewCell.swift */,
+				AB624458286E3A8A006AD43B /* CommentViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ABA724D3286E12C6003BBFCC /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ABA724D4286E12D4003BBFCC /* Cells */,
+				ABA724D5286E12DA003BBFCC /* PostDetailViewModel.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		ABA724D4286E12D4003BBFCC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ABA724D7286E13D4003BBFCC /* TitleAndBodyViewModel.swift */,
+				ABA724D9286E144B003BBFCC /* CommentViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ABC08711286DDF1A00FC3140 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ABC08717286DE33A00FC3140 /* New Group */,
+				ABC08712286DDF2600FC3140 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ABC08712286DDF2600FC3140 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABC08713286DDF5200FC3140 /* UIViewController+Extensions.swift */,
+				ABC08715286DDFC400FC3140 /* UIApplication+Extensions.swift */,
+				AB62445B286E3D6A006AD43B /* String+Extensions.swift */,
+			);
+			name = Extensions;
+			path = "../New Group/Extensions";
+			sourceTree = "<group>";
+		};
+		ABC08717286DE33A00FC3140 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB409542286CF11100973073 /* techTestZemoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB40956D286CF11200973073 /* Build configuration list for PBXNativeTarget "techTestZemoga" */;
+			buildPhases = (
+				2C7620DCA6735FA566A84E74 /* [CP] Check Pods Manifest.lock */,
+				AB40953F286CF11100973073 /* Sources */,
+				AB409540286CF11100973073 /* Frameworks */,
+				AB409541286CF11100973073 /* Resources */,
+				4F4C20A3E4898DE36AC83BE2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = techTestZemoga;
+			productName = techTestZemoga;
+			productReference = AB409543286CF11100973073 /* techTestZemoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB409558286CF11200973073 /* techTestZemogaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB409570286CF11200973073 /* Build configuration list for PBXNativeTarget "techTestZemogaTests" */;
+			buildPhases = (
+				C0E46EDFCB9A8F6E20279B1F /* [CP] Check Pods Manifest.lock */,
+				AB409555286CF11200973073 /* Sources */,
+				AB409556286CF11200973073 /* Frameworks */,
+				AB409557286CF11200973073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB40955B286CF11200973073 /* PBXTargetDependency */,
+			);
+			name = techTestZemogaTests;
+			productName = techTestZemogaTests;
+			productReference = AB409559286CF11200973073 /* techTestZemogaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB409562286CF11200973073 /* techTestZemogaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB409573286CF11200973073 /* Build configuration list for PBXNativeTarget "techTestZemogaUITests" */;
+			buildPhases = (
+				56EDB181CC83C9AD04748C99 /* [CP] Check Pods Manifest.lock */,
+				AB40955F286CF11200973073 /* Sources */,
+				AB409560286CF11200973073 /* Frameworks */,
+				AB409561286CF11200973073 /* Resources */,
+				512F760130BD9524A95A7D74 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB409565286CF11200973073 /* PBXTargetDependency */,
+			);
+			name = techTestZemogaUITests;
+			productName = techTestZemogaUITests;
+			productReference = AB409563286CF11200973073 /* techTestZemogaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB40953B286CF11100973073 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					AB409542286CF11100973073 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					AB409558286CF11200973073 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AB409542286CF11100973073;
+					};
+					AB409562286CF11200973073 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AB409542286CF11100973073;
+					};
+				};
+			};
+			buildConfigurationList = AB40953E286CF11100973073 /* Build configuration list for PBXProject "techTestZemoga" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB40953A286CF11100973073;
+			productRefGroup = AB409544286CF11100973073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB409542286CF11100973073 /* techTestZemoga */,
+				AB409558286CF11200973073 /* techTestZemogaTests */,
+				AB409562286CF11200973073 /* techTestZemogaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB409541286CF11100973073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB409553286CF11200973073 /* LaunchScreen.storyboard in Resources */,
+				AB409550286CF11200973073 /* Assets.xcassets in Resources */,
+				AB62445A286E3A8A006AD43B /* CommentViewCell.xib in Resources */,
+				AB4095A3286D009B00973073 /* PostViewCell.xib in Resources */,
+				ABA724D2286E1058003BBFCC /* TitleAndDescriptionViewCell.xib in Resources */,
+				AB40954E286CF11100973073 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB409557286CF11200973073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB409561286CF11200973073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C7620DCA6735FA566A84E74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-techTestZemoga-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F4C20A3E4898DE36AC83BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-techTestZemoga/Pods-techTestZemoga-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-techTestZemoga/Pods-techTestZemoga-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-techTestZemoga/Pods-techTestZemoga-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		512F760130BD9524A95A7D74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-techTestZemoga-techTestZemogaUITests/Pods-techTestZemoga-techTestZemogaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-techTestZemoga-techTestZemogaUITests/Pods-techTestZemoga-techTestZemogaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-techTestZemoga-techTestZemogaUITests/Pods-techTestZemoga-techTestZemogaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56EDB181CC83C9AD04748C99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-techTestZemoga-techTestZemogaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E46EDFCB9A8F6E20279B1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-techTestZemogaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB40953F286CF11100973073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB4095A2286D009B00973073 /* PostViewCell.swift in Sources */,
+				AB409596286CFA6800973073 /* User.swift in Sources */,
+				AB624454286E320A006AD43B /* UserService.swift in Sources */,
+				AB40958A286CF47B00973073 /* URLSessionProtocol.swift in Sources */,
+				AB624461286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift in Sources */,
+				ABA724CD286E0857003BBFCC /* PostDetailViewController.swift in Sources */,
+				AB409592286CF72C00973073 /* Post.swift in Sources */,
+				AB40954B286CF11100973073 /* ViewController.swift in Sources */,
+				AB409599286CFE0D00973073 /* PostsListViewController.swift in Sources */,
+				AB4095A6286D023F00973073 /* PostViewModel.swift in Sources */,
+				ABA724D1286E1058003BBFCC /* TitleAndDescriptionViewCell.swift in Sources */,
+				AB409580286CF3FB00973073 /* NetworkError.swift in Sources */,
+				AB40959C286CFEF200973073 /* PostsListViewModel.swift in Sources */,
+				AB409547286CF11100973073 /* AppDelegate.swift in Sources */,
+				AB40957E286CF3E500973073 /* NetworkResponse.swift in Sources */,
+				AB40957A286CF2BB00973073 /* URLComponents.swift in Sources */,
+				ABC08714286DDF5200FC3140 /* UIViewController+Extensions.swift in Sources */,
+				ABA724D8286E13D4003BBFCC /* TitleAndBodyViewModel.swift in Sources */,
+				ABA724DA286E144B003BBFCC /* CommentViewModel.swift in Sources */,
+				AB624459286E3A8A006AD43B /* CommentViewCell.swift in Sources */,
+				AB409594286CF96700973073 /* Comment.swift in Sources */,
+				ABC08716286DDFC400FC3140 /* UIApplication+Extensions.swift in Sources */,
+				ABA724D6286E12DA003BBFCC /* PostDetailViewModel.swift in Sources */,
+				AB40957C286CF39500973073 /* URLRequest+Extensions.swift in Sources */,
+				AB4095A8286DD93500973073 /* PostService.swift in Sources */,
+				AB62445C286E3D6A006AD43B /* String+Extensions.swift in Sources */,
+				AB409582286CF44A00973073 /* URLSessionProvider.swift in Sources */,
+				AB409549286CF11100973073 /* SceneDelegate.swift in Sources */,
+				AB409578286CF29900973073 /* ServiceProtocol.swift in Sources */,
+				AB40959E286CFF3100973073 /* BaseViewModelProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB409555286CF11200973073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB409584286CF45200973073 /* URLComponents.swift in Sources */,
+				AB409586286CF45200973073 /* NetworkResponse.swift in Sources */,
+				AB409585286CF45200973073 /* URLRequest+Extensions.swift in Sources */,
+				AB409587286CF45200973073 /* NetworkError.swift in Sources */,
+				AB40958B286CF47B00973073 /* URLSessionProtocol.swift in Sources */,
+				AB40955E286CF11200973073 /* techTestZemogaTests.swift in Sources */,
+				AB409588286CF45200973073 /* URLSessionProvider.swift in Sources */,
+				AB409583286CF45200973073 /* ServiceProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB40955F286CF11200973073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB409568286CF11200973073 /* techTestZemogaUITests.swift in Sources */,
+				AB40956A286CF11200973073 /* techTestZemogaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB40955B286CF11200973073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB409542286CF11100973073 /* techTestZemoga */;
+			targetProxy = AB40955A286CF11200973073 /* PBXContainerItemProxy */;
+		};
+		AB409565286CF11200973073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB409542286CF11100973073 /* techTestZemoga */;
+			targetProxy = AB409564286CF11200973073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB40954C286CF11100973073 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB40954D286CF11100973073 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB409551286CF11200973073 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB409552286CF11200973073 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB40956B286CF11200973073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB40956C286CF11200973073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB40956E286CF11200973073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EDFB14118F1FCAE14ACD5DB /* Pods-techTestZemoga.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = techTestZemoga/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rpacheco.techTestZemoga.techTestZemoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB40956F286CF11200973073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0472A25C8C34D65DA4D33AB /* Pods-techTestZemoga.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = techTestZemoga/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rpacheco.techTestZemoga.techTestZemoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB409571286CF11200973073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 379F63E34699084D07CA562F /* Pods-techTestZemogaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rpacheco.techTestZemoga.techTestZemogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/techTestZemoga.app/techTestZemoga";
+			};
+			name = Debug;
+		};
+		AB409572286CF11200973073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3181F8F33AB0559D9940050 /* Pods-techTestZemogaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rpacheco.techTestZemoga.techTestZemogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/techTestZemoga.app/techTestZemoga";
+			};
+			name = Release;
+		};
+		AB409574286CF11200973073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCB12B7755F8F0BE7154260 /* Pods-techTestZemoga-techTestZemogaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rpacheco.techTestZemoga.techTestZemogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = techTestZemoga;
+			};
+			name = Debug;
+		};
+		AB409575286CF11200973073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D138483F2A3A5402C8C5D41 /* Pods-techTestZemoga-techTestZemogaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWHPM2LNZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rpacheco.techTestZemoga.techTestZemogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = techTestZemoga;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB40953E286CF11100973073 /* Build configuration list for PBXProject "techTestZemoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB40956B286CF11200973073 /* Debug */,
+				AB40956C286CF11200973073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB40956D286CF11200973073 /* Build configuration list for PBXNativeTarget "techTestZemoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB40956E286CF11200973073 /* Debug */,
+				AB40956F286CF11200973073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB409570286CF11200973073 /* Build configuration list for PBXNativeTarget "techTestZemogaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB409571286CF11200973073 /* Debug */,
+				AB409572286CF11200973073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB409573286CF11200973073 /* Build configuration list for PBXNativeTarget "techTestZemogaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB409574286CF11200973073 /* Debug */,
+				AB409575286CF11200973073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB40953B286CF11100973073 /* Project object */;
+}
