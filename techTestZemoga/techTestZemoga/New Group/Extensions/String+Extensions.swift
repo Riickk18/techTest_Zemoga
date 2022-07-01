@@ -9,7 +9,12 @@ import Foundation
 import UIKit
 
 extension String {
-
+    /**
+     Function to create a Mutable String with bold font.
+     - Parameter string: string that will be configure with system bold font
+     - Parameter size: CGFloat of size of font value
+     - Returns: A NSMutableAttributedString
+     */
     func configureBoldNSMutableAttributedString(string: String, size: CGFloat) -> NSMutableAttributedString{
         let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: size)]
         let attributedString = NSMutableAttributedString(string: string, attributes: attrs as [NSAttributedString.Key : Any])
@@ -21,7 +26,7 @@ extension String {
     
     /**
      Function to create a Mutable String with light font.
-     - Parameter string: string that will be configure with Roboto-Light font
+     - Parameter string: string that will be configure with system font
      - Parameter size: CGFloat of size of font value
      - Returns: A NSMutableAttributedString
      */
@@ -32,8 +37,8 @@ extension String {
     
     /**
      Function to create a Mutable String with bold string and light string. Additionally, string will configure with 5 points of lineSpacing
-     - Parameter stringBold: string that will be configure with Roboto-Bold font
-     - Parameter self: string that will be configure with Roboto-Light
+     - Parameter stringBold: string that will be configure with system bold font
+     - Parameter self: string that will be configure with system font
      - Parameter size: CGFloat of size of font value
      - Returns: A string composing with stringBold + stringLight
      */
