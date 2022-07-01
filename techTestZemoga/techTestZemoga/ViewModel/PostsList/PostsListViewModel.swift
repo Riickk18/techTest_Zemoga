@@ -7,7 +7,6 @@
 
 import RxSwift
 import RxCocoa
-import RealmSwift
 
 class PostsListViewModel: BaseViewModelProtocol {
     
@@ -30,13 +29,9 @@ class PostsListViewModel: BaseViewModelProtocol {
     }
     
     func getPostsFromDb() {
-        do {
-            let realm = try Realm()
-            let posts = realm.objects(Post.self)
-            cells = posts.sorted(by: { $0.isFavorite && !$1.isFavorite}).map({ PostViewModel(with: $0) })
-            updateTableSubject.onNext(true)
-        } catch let error {
-            print(error.localizedDescription)
+        RealmHelper.getPostsFromDb { [weak self] posts in
+            self?.cells = posts.sorted(by: { $0.isFavorite && !$1.isFavorite}).map({ PostViewModel(with: $0) })
+            self?.updateTableSubject.onNext(true)
         }
     }
     
@@ -56,25 +51,16 @@ class PostsListViewModel: BaseViewModelProtocol {
     
     private func buildPostsModels(_ posts: [Post]) {
         posts.forEach { post in
-            Post.createOrUpdate(post: post)
+            RealmHelper.post(createOrUpdate: post)
         }
         cells = posts.sorted(by: { $0.isFavorite && !$1.isFavorite}).map({ PostViewModel(with: $0) })
         updateTableSubject.onNext(true)
     }
     
     func deleteAllPosts() {
-        do{
-            let realm = try Realm()
-            let posts = realm.objects(Post.self)
-            try posts.forEach({ post in
-                try realm.write{
-                    realm.delete(post)
-                }
-            })
-            self.cells = []
-            self.updateTableSubject.onNext(true)
-        }catch{
-            print(error.localizedDescription)
+        RealmHelper.deleteAllPosts { [weak self] in
+            self?.cells = []
+            self?.updateTableSubject.onNext(true)
         }
     }
 }

@@ -7,7 +7,6 @@
 
 import RxSwift
 import RxCocoa
-import RealmSwift
 
 class PostDetailViewModel: BaseViewModelProtocol {
     
@@ -37,20 +36,13 @@ class PostDetailViewModel: BaseViewModelProtocol {
     
     func initCells() {
         dataCells = []
-        do {
-            let realm = try Realm()
-            let postPredicate: NSPredicate = NSPredicate(format: "id = %@", argumentArray: [postId ?? 0])
-            guard let post = realm.objects(Post.self).filter(postPredicate).first else {return}
-            try! realm.write {
-                post.wasRead = true
-            }
-            self.post = post
-            self.dataCells.append(TitleAndDescriptionViewModel(title: post.title, body: post.body))
-            self.dataCells.append(TitleAndDescriptionViewModel(title: "User", body: post.user?.getUserDetails()))
-            self.favoriteIconSubject.onNext(post.isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star"))
-            self.updateTableSubject.onNext(true)
-        } catch {
-            print(error.localizedDescription)
+        RealmHelper.post(updatePostSeen: postId ?? 0)
+        RealmHelper.post(getPostById: postId ?? 0) { [weak self] updatedPost in
+            self?.post = updatedPost
+            self?.dataCells.append(TitleAndDescriptionViewModel(title: updatedPost.title, body: updatedPost.body))
+            self?.dataCells.append(TitleAndDescriptionViewModel(title: "User", body: updatedPost.user?.getUserDetails()))
+            self?.favoriteIconSubject.onNext(updatedPost.isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star"))
+            self?.updateTableSubject.onNext(true)
         }
     }
     
@@ -61,7 +53,7 @@ class PostDetailViewModel: BaseViewModelProtocol {
             self?.isAnimatingSubject.onNext(false)
             switch response{
             case .success(let user):
-                _ = User.createOrUpdate(user: user)
+                _ = RealmHelper.user(createOrUpdate: user)
                 self?.getComments()
             case .failure(let error):
                 self?.onShowInfoAlert?(error.rawValue, nil)
@@ -90,7 +82,7 @@ class PostDetailViewModel: BaseViewModelProtocol {
     }
     
     func updateFavoriteStatus() {
-        Post.updateFavorite(postId: postId ?? 0) { [weak self] isFavorite in
+        RealmHelper.post(updateFavoriteWithPostId: postId ?? 0) { [weak self] isFavorite in
             self?.favoriteIconSubject.onNext(isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star"))
         }
     }
@@ -99,7 +91,7 @@ class PostDetailViewModel: BaseViewModelProtocol {
         guard let postId = postId else {
             return
         }
-        Post.deletePost(postId: postId)
+        RealmHelper.post(deletePostWithId: postId)
         completion()
     }
 }

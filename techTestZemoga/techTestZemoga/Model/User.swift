@@ -19,29 +19,6 @@ class User: Object, Codable {
       return "id"
     }
     
-    public static func createOrUpdate(user: User) -> (Bool, String?){
-        do {
-            let realm = try Realm()
-            
-            try realm.write {
-                realm.add(user, update: .modified)
-            }
-            return (true, nil)
-        } catch let error {
-            return (false, error.localizedDescription)
-        }
-    }
-    
-    public static func getUserFromDB(userId: Int) -> (User?){
-        do {
-            let realm = try Realm()
-            let postPredicate: NSPredicate = NSPredicate(format: "id = %@", argumentArray: [userId])
-            return realm.objects(User.self).filter(postPredicate).first
-        } catch {
-            return nil
-        }
-    }
-    
     func getUserDetails() -> String {
         return "\(name ?? "")\n\(email ?? "")\n\(phone ?? "")\n\(website ?? "")"
     }

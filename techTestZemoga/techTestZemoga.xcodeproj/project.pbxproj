@@ -47,6 +47,7 @@
 		AB62445A286E3A8A006AD43B /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB624458286E3A8A006AD43B /* CommentViewCell.xib */; };
 		AB62445C286E3D6A006AD43B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62445B286E3D6A006AD43B /* String+Extensions.swift */; };
 		AB624461286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB624460286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift */; };
+		AB9E64B6286F4AA7000DDADC /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E64B5286F4AA7000DDADC /* RealmHelper.swift */; };
 		ABA724CD286E0857003BBFCC /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA724CC286E0857003BBFCC /* PostDetailViewController.swift */; };
 		ABA724D1286E1058003BBFCC /* TitleAndDescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA724CF286E1058003BBFCC /* TitleAndDescriptionViewCell.swift */; };
 		ABA724D2286E1058003BBFCC /* TitleAndDescriptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA724D0286E1058003BBFCC /* TitleAndDescriptionViewCell.xib */; };
@@ -117,6 +118,7 @@
 		AB624458286E3A8A006AD43B /* CommentViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
 		AB62445B286E3D6A006AD43B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		AB624460286E57E5006AD43B /* ConfirmDeleteAllPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDeleteAllPostsViewController.swift; sourceTree = "<group>"; };
+		AB9E64B5286F4AA7000DDADC /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		ABA724CC286E0857003BBFCC /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		ABA724CF286E1058003BBFCC /* TitleAndDescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndDescriptionViewCell.swift; sourceTree = "<group>"; };
 		ABA724D0286E1058003BBFCC /* TitleAndDescriptionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndDescriptionViewCell.xib; sourceTree = "<group>"; };
@@ -385,7 +387,7 @@
 		ABC08711286DDF1A00FC3140 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				ABC08717286DE33A00FC3140 /* New Group */,
+				ABC08717286DE33A00FC3140 /* Realm */,
 				ABC08712286DDF2600FC3140 /* Extensions */,
 			);
 			path = Common;
@@ -402,11 +404,12 @@
 			path = "../New Group/Extensions";
 			sourceTree = "<group>";
 		};
-		ABC08717286DE33A00FC3140 /* New Group */ = {
+		ABC08717286DE33A00FC3140 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				AB9E64B5286F4AA7000DDADC /* RealmHelper.swift */,
 			);
-			path = "New Group";
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -675,6 +678,7 @@
 				ABC08716286DDFC400FC3140 /* UIApplication+Extensions.swift in Sources */,
 				ABA724D6286E12DA003BBFCC /* PostDetailViewModel.swift in Sources */,
 				AB40957C286CF39500973073 /* URLRequest+Extensions.swift in Sources */,
+				AB9E64B6286F4AA7000DDADC /* RealmHelper.swift in Sources */,
 				AB4095A8286DD93500973073 /* PostService.swift in Sources */,
 				AB62445C286E3D6A006AD43B /* String+Extensions.swift in Sources */,
 				AB409582286CF44A00973073 /* URLSessionProvider.swift in Sources */,

@@ -7,7 +7,6 @@
 
 import RxSwift
 import RxCocoa
-import RealmSwift
 
 class PostViewModel: BaseViewModelProtocol {
     struct Output {
@@ -42,7 +41,7 @@ class PostViewModel: BaseViewModelProtocol {
     }
     
     func updateStateToSeen(postId: Int) {
-        Post.updateSeen(postId: postId, seen: true) { post in
+        RealmHelper.post(updateSeenWithPostId: postId, seen: true) { post in
             self.post = post
             self.initSubjects()
         }
